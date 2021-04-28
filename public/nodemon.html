@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Change Titel -->
+    <title>Node.js - Cheatsheet</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/sidenav.css" />
+
+    <!-- Prism used for code highligting -->
+    <link rel="stylesheet" type="text/css" href="css/prism.css" />
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <div class="d-flex" id="wrapper">
+  
+      <!-- START Sidebar -->
+      <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading" style="font-weight: bold;">Node.js Cheatsheet</div>
+        <div class="list-group list-group-flush">
+          <a href="/" class="list-group-item list-group-item-action bg-light">Get started with Node.js</a>
+        </div>
+        <div class="sidebar-heading" style="font-weight: bold;">How to:</div>
+        <div class="list-group list-group-flush">
+            <a href="nodemon" class="list-group-item list-group-item-action bg-light">Setup Nodemon</a>
+            <a href="routes" class="list-group-item list-group-item-action bg-light">Setup routes</a>
+            <a href="variables" class="list-group-item list-group-item-action bg-light">Use Enviroment Variables</a>
+            <a href="script" class="list-group-item list-group-item-action bg-light">Create a script</a>
+            <a href="static" class="list-group-item list-group-item-action bg-light">Access CSS and JS files</a>
+            <a href="api" class="list-group-item list-group-item-action bg-light">Create a Rest API</a>
+          </div>
+      </div>
+      <!-- END Sidebar -->
+  
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                   <h1>Setup Nodemon</h1>
+                   <p>Nodemon is a usefull tool when developing on a node server. Nodemon automatically restart your node server whenever you make changes in the code and thereby you don't have to re-run it manually each time. </p>
+                    <p>Documentation on Nodemon can be found <a href="https://nodemon.io/">here</a></p>
+
+                    <h2>Install Nodemon</h2>
+                    <p>If you never used Nodemon before you need to install it.
+                        Installation can be done trough terminal if you already have Node.js installed on your computer.
+                    </p>
+                    <p>To install it you just need to run the below command in your terminal: </p>
+                    <p>Terminal Command: </p>
+                    <pre>
+                        <code class="language-json">
+npm install -g nodemon
+                        </code> 
+                    </pre>
+                    <p>When it have been succesfully installed, then you are ready to start using nodemon</p>
+                    <h2>How to use Nodemon?</h2>
+                    <p>Nodemon is super simple to use. 
+                        You just have to replace "node" with "nodemon" when running your node server.
+                    </p>
+                    <p>Terminal Command: </p>
+                    <pre>
+                        <code class="language-json">
+nodemon app.js
+                        </code> 
+                    </pre>
+                    <p>The above command will start your server with nodemon, and it will therefore automatically re-run your code when any changes accure.</p>
+                    <p>The terminal should respond something like this if your node server is running succesfully.</p>
+                    <pre>
+                        <code class="language-javascript">
+[nodemon] 2.0.7
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Server is running on port 8080
+                        </code> 
+                    </pre>
+                    <p>You can always restart the server manually by writting "rs" into the terminal! </p>
+                </div>
+            </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+  
+    </div>
+    <!-- /#wrapper -->
+  
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+    <!-- Prism used for code highligting -->
+    <script src="js/prism.js" type="text/javascript"></script>
+  </body>
+</html>
